@@ -1,0 +1,423 @@
+/* G2LC Website - Style basique/amateur */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #000000;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header .logo {
+    height: 50px;
+    width: auto;
+}
+
+header .header-title {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav {
+    background-color: #333333;
+    padding: 10px 20px;
+}
+
+nav .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+nav .nav-link:hover {
+    background-color: #FF6600;
+}
+
+nav .nav-link.active {
+    background-color: #FF6600;
+}
+
+nav .nav-hidden {
+    display: none;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.content-box {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-box h1 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #FF6600;
+    padding-bottom: 10px;
+}
+
+.content-box h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.content-box p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.content-box hr {
+    border: none;
+    border-top: 1px solid #cccccc;
+    margin: 25px 0;
+}
+
+/* Logo large sur page accueil */
+.logo-large {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 200px;
+    height: auto;
+}
+
+/* Chercheurs */
+.researcher {
+    border: 1px solid #cccccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+.researcher h3 {
+    margin-bottom: 5px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th, table td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Liste */
+ul {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Reference */
+.reference {
+    font-size: 12px;
+    color: #666666;
+    margin-top: 30px;
+}
+
+/* Login Form */
+.center-content {
+    text-align: center;
+}
+
+.login-form {
+    max-width: 300px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid #FF6600;
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    font-family: Arial, sans-serif;
+}
+
+.form-buttons {
+    margin-top: 20px;
+}
+
+.form-buttons button {
+    padding: 8px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    border: 1px solid #333333;
+    background-color: #ffffff;
+}
+
+.form-buttons button:hover {
+    background-color: #FF6600;
+    color: #ffffff;
+}
+
+.error-msg {
+    color: #cc0000;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* JuliuIS Layout - 3 colonnes */
+.juliuis-layout {
+    display: flex;
+    height: calc(100vh - 150px);
+    border: 2px solid #FF6600;
+}
+
+.juliuis-buttons {
+    width: 100px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-right: 1px solid #cccccc;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.juliuis-btn {
+    padding: 10px 5px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    border: 1px solid #333333;
+    background-color: #ffffff;
+    font-size: 12px;
+}
+
+.juliuis-btn:hover, .juliuis-btn.active {
+    background-color: #FF6600;
+    color: #ffffff;
+}
+
+.juliuis-filelist {
+    width: 200px;
+    background-color: #f9f9f9;
+    border-right: 1px solid #cccccc;
+    overflow-y: auto;
+}
+
+.filelist-header, .content-header {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 8px 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.juliuis-filelist ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.juliuis-filelist li {
+    padding: 8px 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 13px;
+    margin: 0;
+}
+
+.juliuis-filelist li:hover {
+    background-color: #ffe0c0;
+}
+
+.juliuis-filelist li.selected {
+    background-color: #FF6600;
+    color: #ffffff;
+}
+
+.juliuis-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    border: 3px solid #FF6600;
+}
+
+.modal-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #FF6600;
+    font-weight: bold;
+    z-index: 1001;
+}
+
+.modal-close:hover {
+    color: #cc5200;
+}
+
+.modal-content iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Info block */
+.info-block {
+    background-color: #f9f9f9;
+    border-left: 4px solid #FF6600;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.info-block p {
+    margin-bottom: 5px;
+}
+
+.mission {
+    font-size: 16px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 4px solid #FF6600;
+}
+
+/* Photo école */
+.photo-lpp {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px auto;
+    border: 1px solid #cccccc;
+}
+
+/* File icons */
+.file-icon {
+    margin-right: 5px;
+}
+
+.play-icon {
+    color: #FF6600;
+}
+
+.video-item {
+    background-color: #fff8f0;
+}
+
+/* Video embed */
+.video-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    max-height: 450px;
+}
+
+/* Text content */
+#file-content {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    background-color: #ffffff;
+}
+
+.text-content {
+    padding: 15px;
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.loading, .error {
+    padding: 15px;
+    font-style: italic;
+    color: #666666;
+}
