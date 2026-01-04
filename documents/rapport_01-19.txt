@@ -1,0 +1,80 @@
+RAPPORT HEBDOMADAIRE - G2LC
+Projet JuliuIS
+================================
+
+Date: 19 janvier 198X
+Rédacteur: Y. Gaudreault-Labrie
+
+RÉSUMÉ
+------
+Deuxième semaine de la phase 3
+3 sessions d'exposition réalisées
+
+DONNÉES RÉCOLTÉES
+---------------------
+# Moyenne de groupe phase 0 contrôle: 76.1% #
+Moyenne du test hebdomadaire: 89.3%
+Variation: +17.4% 
+
+OBSERVATIONS
+------------
+- Effet notable sur les performances académiques
+- Les élèves obtiennent tous des résultats presque identiques
+- Augmentation exponentiel hebdomadaire constante du coefficient de variation
+- Augmentation extrême des AC et de leur intensité
+- Effet évident sur le comportement
+
+AC
+--
+Anomalies de la semaine:
+EVENTMAINS22
+EVENTSOM9
+CLASSESOM4
+ETUDESOM3 (par R. Cadieux)
+EVENTAPPARITION
+EVENTPOINTE17
+EVENTHALLUC
+EVENTAPPARITION2
+EVENTHALLUC2
+EVENTHALLUCGRP
+EVENTAPPARITION3
+EVENTHALLUCGRP2
+EVENTHALLUC3
+EVENTHALLUC4
+EVENTAPPARITION4
+EVENTHALLUC5
+EVENTSOM5
+EVENTHALLUCGRP3
+EVENTAPPARITION5
+EVENTHALLUCGRP4
+EVENTAPPARITION6
+EVENTAPPARITION7
+EVENTSOM6
+ETUDESOM4 (par R. Cadieux)
+CLASSESOM5
+EVENTPOINTE18
+EVENTHALLUC6
+EVENTHALLUCGRP5
+EVENTHALLUCGRP6
+EVENTHALLUC7
+EVENTHALLUC8
+EVENTHALLUCGRP7
+EVENTHALLUCGRP8
+EVENTHALLUCGRP9
+EVENTHALLUCGRP10
+EVENTHALLUCGRP11
+EVENTHALLUC9
+EVENTHALLUCGRP12
+EVENTHALLUCGRP13
+EVENTHALLUCGRP14
+EVENTHALLUCGRP15
+EVENTHALLUC10
+
+*cassettes des vidéosurveillances récupérées et enregistrées
+
+NOTES
+------
+Ajout de la section des anomalies comportementales
+
+---
+Document interne G2LC

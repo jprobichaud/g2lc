@@ -1,0 +1,51 @@
+RAPPORT HEBDOMADAIRE - G2LC
+Projet JuliuIS
+================================
+
+Date: 12 janvier 198X
+Rédacteur: Y. Gaudreault-Labrie
+
+RÉSUMÉ
+------
+Première semaine de la phase 3
+3 sessions d'exposition réalisées
+Double du temps du mois précédent
+
+DONNÉES RÉCOLTÉES
+---------------------
+# Moyenne de groupe phase 0 contrôle: 76.1% #
+Moyenne du test hebdomadaire: 87.6%
+Variation: +15.1% 
+
+OBSERVATIONS
+------------
+- Effet notable sur les performances académiques
+- Les élèves obtiennent tous des résultats presque identiques
+- Augmentation exponentiel hebdomadaire constante du coefficient de variation
+
+AC
+--
+Anomalies de la semaine:
+EVENTMAINS17
+EVENTMAINS18
+EVENTSOM8 
+EVENTMAINS19
+CLASSESOM3
+ETUDESOM2 (par R. Cadieux)
+EVENTPOINTE15
+EVENTMAINS20
+EVENTPOINTE16
+EVENTRIRE
+EVENTRIRE2
+EVENTMAINS21
+
+*cassettes des vidéosurveillances récupérées et enregistrées
+
+NOTES
+------
+Ajout de la section des anomalies comportementales
+
+---
+Document interne G2LC
+
+

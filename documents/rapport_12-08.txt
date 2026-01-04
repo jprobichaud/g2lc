@@ -1,0 +1,26 @@
+RAPPORT HEBDOMADAIRE - G2LC
+Projet JuliuIS
+================================
+
+Date: 8 décembre 198X
+Rédacteur: Y. Gaudreault-Labrie
+
+RÉSUMÉ
+------
+Première semaine de la phase 2
+3 sessions d'exposition réalisées
+
+DONNÉES RÉCOLTÉES
+---------------------
+# Moyenne de groupe phase 0 contrôle: 76.1% #
+Moyenne du test hebdomadaire: 80%
+Variation: +5.1% 
+
+OBSERVATIONS
+------------
+- Petit effet sur les performances académiques
+- Augmentation exponentiel hebdomadaire constante du coefficient de variation
+- Aucun rapport des autres professeurs ou de R. Cadieux
+
+---
+Document interne G2LC
