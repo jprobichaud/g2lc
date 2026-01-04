@@ -47,6 +47,7 @@ const FILES = {
 
 // État de l'application
 let isLoggedIn = false;
+let isEricUnlocked = false;
 let currentFolder = null;
 
 // Initialisation
@@ -60,6 +61,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if (sessionStorage.getItem('g2lc_logged_in') === 'true') {
         isLoggedIn = true;
         showJuliuISNav();
+    }
+
+    // Vérifier si dossier Éric déjà déverrouillé
+    if (sessionStorage.getItem('g2lc_eric_unlocked') === 'true') {
+        isEricUnlocked = true;
     }
 });
 
@@ -172,9 +178,25 @@ function initJuliuIS() {
     });
 
     btnEric.addEventListener('click', function() {
-        setActiveButton(this);
-        currentFolder = 'eric';
-        loadFileList('eric');
+        // Vérifier si déjà déverrouillé
+        if (isEricUnlocked) {
+            setActiveButton(this);
+            currentFolder = 'eric';
+            loadFileList('eric');
+            return;
+        }
+
+        // Demander le mot de passe
+        var pwd = prompt('Mot de passe requis pour accéder aux fichiers d\'Éric:');
+        if (pwd === 'XxcdGtmPIL47') {
+            isEricUnlocked = true;
+            sessionStorage.setItem('g2lc_eric_unlocked', 'true');
+            setActiveButton(btnEric);
+            currentFolder = 'eric';
+            loadFileList('eric');
+        } else if (pwd !== null) {
+            alert('Mot de passe incorrect.');
+        }
     });
 }
 
