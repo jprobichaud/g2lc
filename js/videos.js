@@ -21,6 +21,5 @@ const VIDEOS = [
     { id: "-dmNtH1mVwo", title: "DSCN2823 EVENTMAINS22",      folder: "documents" },
     { id: "3toFUk8ansE", title: "DSCN2821 EVENTMAINS18",      folder: "documents" },
     { id: "JRK1dXY1LlU", title: "DSCN2810 EVENTSOM6",         folder: "documents" },
-    { id: "VHipPIGLJ-U", title: "DSCN2815 ETUDESOM5",         folder: "documents" },
     { id: "slzNU0ERQik", title: "DSCN2837 EVENTSOM13",        folder: "documents" },
 ];
