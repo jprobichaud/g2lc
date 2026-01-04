@@ -16,6 +16,7 @@ const FILES = {
         'emailchatter_snapshot1.png',
         'emailchatter_snapshot2.png',
         'emailchatter_snapshot3.png'
+        'delete.me'
     ],
     eric: [
         '11-01.txt',
