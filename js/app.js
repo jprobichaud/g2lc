@@ -4,15 +4,44 @@
 // Pour ajouter des fichiers, ajoutez-les dans ces listes
 const FILES = {
     documents: [
-        'rapport_septembre.txt',
-        'rapport_octobre.txt',
-        'observations_nov.txt',
-        'notes_janvier.txt'
+        'rapport_11-10.txt',
+        'rapport_11-17.txt',
+        'rapport_11-24.txt',
+        'rapport_12-01.txt',
+        'rapport_12-08.txt',
+        'rapport_12-15.txt',
+        'rapport_01-05.txt',
+        'rapport_01-12.txt',
+        'rapport_01-19.txt',
+        'emailchatter_snapshot1.png',
+        'emailchatter_snapshot2.png',
+        'emailchatter_snapshot3.png'
     ],
     eric: [
-        'journal_personnel.txt',
-        'doutes.txt',
-        'incident_12nov.txt'
+        '11-01.txt',
+        '11-06.txt',
+        '11-07.txt',
+        '11-10.txt',
+        '11-12.txt',
+        '11-17.txt',
+        '11-23.txt',
+        '12-02.txt',
+        '12-07.txt',
+        '12-15.txt',
+        '12-19.txt',
+        '12-22.txt',
+        '12-27.txt',
+        '01-06.txt',
+        '01-10.txt',
+        '01-15.txt',
+        '01-18.txt',
+        '01-20.txt',
+        '01-24.txt',
+        '01-25.txt',
+        '01-29.txt',
+        'rapport_12-22.txt',
+        'rapport_final_01-26.txt',
+        'avis metivier.png'
     ]
 };
 
@@ -165,10 +194,12 @@ function loadFileList(folder) {
 
     const files = FILES[folder] || [];
 
-    // Ajouter les fichiers texte
+    // Ajouter les fichiers (texte et images)
     files.forEach(function(filename) {
         const li = document.createElement('li');
-        li.innerHTML = '<span class="file-icon">📄</span> ' + filename;
+        const isImage = filename.match(/\.(png|jpg|jpeg|gif)$/i);
+        const icon = isImage ? '🖼️' : '📄';
+        li.innerHTML = '<span class="file-icon">' + icon + '</span> ' + filename;
         li.addEventListener('click', function() {
             selectItem(this);
             loadFileContent(folder, filename);
@@ -176,17 +207,21 @@ function loadFileList(folder) {
         fileList.appendChild(li);
     });
 
-    // Ajouter les vidéos (seulement pour "documents")
-    if (folder === 'documents' && typeof VIDEOS !== 'undefined') {
+    // Ajouter les vidéos (filtrées par folder)
+    if (typeof VIDEOS !== 'undefined') {
         VIDEOS.forEach(function(video) {
-            const li = document.createElement('li');
-            li.innerHTML = '<span class="file-icon play-icon">▶</span> ' + video.title + '.mp4';
-            li.classList.add('video-item');
-            li.addEventListener('click', function() {
-                selectItem(this);
-                loadVideo(video.id);
-            });
-            fileList.appendChild(li);
+            // Si folder n'est pas défini sur la vidéo, défaut = 'documents'
+            var videoFolder = video.folder || 'documents';
+            if (videoFolder === folder) {
+                const li = document.createElement('li');
+                li.innerHTML = '<span class="file-icon play-icon">▶</span> ' + video.title + '.mp4';
+                li.classList.add('video-item');
+                li.addEventListener('click', function() {
+                    selectItem(this);
+                    loadVideo(video.id);
+                });
+                fileList.appendChild(li);
+            }
         });
     }
 }
@@ -201,6 +236,12 @@ function selectItem(element) {
 function loadFileContent(folder, filename) {
     const fileContent = document.getElementById('file-content');
     const path = folder + '/' + filename;
+
+    // Si c'est une image, afficher directement
+    if (filename.match(/\.(png|jpg|jpeg|gif)$/i)) {
+        fileContent.innerHTML = '<div class="image-container"><img src="' + path + '" alt="' + filename + '"></div>';
+        return;
+    }
 
     fileContent.innerHTML = '<div class="loading">Chargement...</div>';
 
